@@ -30,3 +30,19 @@ print(random)
 
 sequence = np.arange(0,20,2)
 print(sequence)
+
+# array properties
+arr = np.array([[1,2,3],[4,5,6],[7,8,9]])
+print("Shape", arr.shape)
+print("Dimension", arr.ndim)
+print("Data type", arr.dtype)
+
+# array reshaping
+arr = np.arange(12)
+print(arr)
+reshape = arr.reshape(3,4)
+print(reshape)
+flattened = reshape.flatten() # flatten returns copy, ravel returns view
+print(flattened)
+transpose = reshape.T
+print(transpose)
